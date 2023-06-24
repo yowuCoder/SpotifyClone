@@ -6,18 +6,18 @@ interface SidebarItemProps {
   icon: IconType
   label: string
   active: boolean
-  herf: string
+  href: string
 }
 
 const SidebarItem: React.FC<SidebarItemProps> = ({
   icon: Icon,
   label,
   active,
-  herf,
+  href,
 }) => {
   return (
     <Link
-      href={herf}
+      href={href}
       className={twMerge(
         `
        flex
